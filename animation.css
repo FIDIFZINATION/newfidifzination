@@ -1,0 +1,19 @@
+@keyframes fadeUp{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeDown{
+	from{
+		top: -9rem;
+		opacity: 0;
+	}
+	to{
+		top: 0;
+		opacity: 1;
+	}
+}
