@@ -13,7 +13,7 @@ html{
 }
 
 body{
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 a {
@@ -715,8 +715,8 @@ nav .menu-items a:hover{
 }
 
 .contact-us .contact-info{
-	width: 50rem;
-	padding: 5rem;
+	width: 90%rem;
+	padding: 3rem;
 	text-align: center;
 	background-color: #4B1465;
 	color: #fff;
