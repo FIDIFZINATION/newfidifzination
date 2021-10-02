@@ -21,8 +21,14 @@
 		});
 	</script>
 </head>
-<body>
+<body onload="preloader()">
 
+
+	<div id="loading">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
 	<!-- **************************Nav Bar Starts ******************************* -->
 
 	<div data-aos="fade-down" data-aos-duration="1000">
@@ -367,6 +373,11 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+   	var loader = document.getElementById('loading');
+
+    function preloader() {
+    	loader.style.display="none";
+    }
 
   </script>
 

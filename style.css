@@ -24,6 +24,43 @@ li{
 	list-style: none;
 }
 
+
+
+#loading{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	background-color: #fff;
+	height: 100vh;
+	z-index: 1000;
+}
+.dot {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px;
+  animation: loading 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    transform: translatey(-2.5rem);
+    background-color: #034f84;
+  }
+  50% {
+    transform: translatey(2.5rem);
+    background-color: #c94c4c;
+  }
+}
+
+
+
 .visible-0{
 	visibility: hidden;
 }
@@ -64,7 +101,6 @@ nav .menu-items{
 	float: right;
 	text-align: center;
 	transition: all 500ms ease-in;
-	width: 100%;
 
 }
 
