@@ -64,6 +64,7 @@ nav .menu-items{
 	float: right;
 	text-align: center;
 	transition: all 500ms ease-in;
+	width: 100%;
 
 }
 
@@ -536,7 +537,7 @@ nav .menu-items a:hover{
 	align-items: center;
 	width: 50%;
 	position: relative;
-	z-index: 2	;
+	z-index: 2;
 }
 
 .section-6 .menu h3{

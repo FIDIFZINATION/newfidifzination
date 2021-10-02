@@ -52,8 +52,12 @@ window.onscroll = function () {
 
 
 $(document).on('change', '#checkbox', function() {
+    var element = document.querySelector('.menu-items');
+    var wid = window.getComputedStyle(element).getPropertyValue('width');
+
+
     if(this.checked) {
-      $('.menu-items').css("right", "50%");
+      $('.menu-items').css("right", wid);
     }else{
       $('.menu-items').css("right", "-200rem");
 
