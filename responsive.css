@@ -1,0 +1,171 @@
+@media(min-width: 1200px){
+
+}
+
+
+
+@media(max-width: 1050px){
+	nav .menu-items{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 50%;
+		height: 100vh;
+		padding: 2rem;
+		padding-top: 5rem;
+		right: -200rem;
+		background-color: #fff;
+		z-index: 200;
+		transform-origin: 0% 0%;
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 1.0);
+  		transform: translate(100%, 0);  
+  		transition: all 0.6s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	nav .menu-items li{
+		font-size: 1.5rem;
+
+
+	}
+	.hamburger{
+		visibility: visible;
+	}
+
+	.section-3{
+		display: flex;
+		flex-direction: column;
+	}
+	.section-3 .vision-card{
+		margin: 1rem 0;
+	}
+
+	.section-5-content img{
+		width: 80%;
+		height: 80%;
+
+	}
+	.feature-box h6{
+		font-size: 1.5rem;
+		font-weight: 400;
+}
+	.feature-box p{
+		font-size: 1rem;
+		font-weight: 200;
+		line-height: 1.5rem;
+	}
+
+
+}
+
+
+
+
+@media(max-width: 800px){
+
+	nav .menu-items li{
+		font-size: 1.5rem;
+		padding: 3rem;
+	}
+	nav .menu-items a{
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+	.section-1 h1{
+		font-size: 5rem;
+	}
+	.section-1 h3{
+		font-size: 2rem;
+	}
+
+	.section-2 .service-card{
+		margin-top: 2rem;
+	}
+
+	.section-2 .cards-1{
+		display: flex;
+		flex-direction: column;
+	}
+	.content-square{
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-us .content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact-us .content .contact-info{
+		margin-top: 5rem;
+		align-items: center;
+	}
+
+}
+
+
+
+
+@media(max-width: 600px){
+	.btns{
+		display: flex;
+		flex-direction: column;
+		margin-top: 5rem;
+		align-items: center;
+	}
+	.work-btn{
+		margin: 1.5rem;
+	}	
+	.section-1 h1{
+		margin-top: 10rem;
+	}
+	.section-4{
+		padding: 5rem 5rem;
+	}
+
+	.section-5-content, form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	form {
+		width: 45rem !important;
+	}
+
+	form input, form #textarea{
+		width: 90% !important;
+	}
+
+	.contact-info{
+		width: 90%;
+	}
+
+	.contact-info h2{
+		font-size: 3rem !important;
+	}
+	.contact-info h6{
+		font-size: 1.5rem !important;
+	}
+	.contact-info h4{
+		font-size: 2rem !important;
+	}
+	.social-icons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+}
+
+
+
+
+@media(max-width: 480px){
+	.container{
+		position: relative;
+		right: 0;
+	}	
+	.contact-info{
+		padding: 2rem !important;
+	}
+}

@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="animation.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,6 +12,14 @@
 
 
 	<title>FIDIFZI NATION</title>
+	<script>
+ 		let scrollRef = 0;
+
+		window.addEventListener('scroll', function() {
+		  // increase value up to 10, then refresh AOS
+		  scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+		});
+	</script>
 </head>
 <body>
 
@@ -18,23 +27,31 @@
 
 	<div data-aos="fade-down" data-aos-duration="1000">
 
-		<nav id="nav-scroll" >
-		
-		<div class="logo">FIDIFZI NATION</div>
+		<nav id="nav-scroll">
 
+			<div class="logo">FIDIFZI NATION</div>
 
-		<div class="nav-links">
-			<ul>
-				<a href="#home"><li>home</li></a>
-				<a href="#services"><li>services</li></a>
-				<a href=""><li>portfolio</li></a>
-				<a href="#mission"><li>mission</li></a>
-				<a href="#features"><li>features</li></a>
-				<a href="#contact"><li>contact us</li></a>
-			</ul>
-		</div>
+			<div class="hamburger">
+				
+					<input id="checkbox" type="checkbox" />
 
-	</nav>
+					<span></span>
+					<span></span>
+					<span></span>
+			</div>
+			<div class="menu-items">
+						<a href="#home"><li>home</li></a>
+						<a href="#services"><li>services</li></a>
+						<a href=""><li>portfolio</li></a>
+						<a href="#vision"><li>mission</li></a>
+						<a href="#features"><li>features</li></a>
+						<a href="#contact"><li>contact us</li></a>
+			</div>
+
+			
+		</nav>
+
+	
 	</div>
 
 	<!-- **************************Nav Bar Ends******************************* -->
@@ -147,9 +164,9 @@
 
 		<!--********************* section 3 starts **********************-->
 
-		<section class="section-3" id="mission">
+		<section class="section-3" id="vision">
 			
-			<div class="vision-card" data-aos="fade-right" data-aos-duration="800">
+			<div class="vision-card" data-aos="fadein" data-aos-duration="800">
 
 				<i class="fa fa-bullseye"></i>
 				<div class=" sub-heading">Target</div>
@@ -157,7 +174,7 @@
 
 			</div>
 
-			<div class="vision-card" data-aos="fade-up" data-aos-duration="800">
+			<div class="vision-card" data-aos="fadein" data-aos-duration="800">
 
 				<i class="fa fa-briefcase"></i>					
 				<div class=" sub-heading">Work</div>
@@ -167,7 +184,7 @@
 
 			</div>
 
-			<div class="vision-card" data-aos="fade-left" data-aos-duration="800">
+			<div class="vision-card" data-aos="fadein" data-aos-duration="800">
 
 				<i class="fa fa-cog"></i>					
 				<div class=" sub-heading">Hoping</div>
@@ -183,14 +200,14 @@
 
 		<!--********************* section 4 starts **********************-->
 
-		<section class="section-4">
+		<section class="section-4" data-aos="fade-up" data-aos-duration="800">
 			
 			<i class="fa fa-edit "></i>
-			<div class="text" data-aos="fade-up" data-aos-duration="800">
+			<div class="text" >
 				“ A well designed, informative and updated website will add credibility to your business and strengthen your brand. If you want to be successful for your company in the modern marketplace, you’ve got to have a professional website. The importance of a website for marketing extends to every aspect of your digital marketing strategy.”
 			</div>
-			<div class="name" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Mohammed Kaif</div>
-			<div class="designation" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Founder</div>
+			<div class="name" >Mohammed Kaif</div>
+			<div class="designation"  >Founder</div>
 
 		</section>
 
@@ -199,7 +216,7 @@
 		<!--********************* section 5 STARTS **********************-->
 
 		<section class="section-5" id="features">
-			
+				
 			<div data-aos="fade-up" data-aos-duration="800">
 				<div class="section-heading" >Awesome Features</div>
 				<h5>The purpose of business is to create customer, who creates customers.</h5>
@@ -213,7 +230,7 @@
 
 				<div class="info">
 
-					<div class="feature-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+					<div class="feature-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
 						<i class="fa fa-crop"></i>				
 						<div>
 							<h6 class="heading">Creative Design</h6>				
@@ -222,7 +239,7 @@
 					</div>
 					
 
-					<div class="feature-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+					<div class="feature-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
 						<i class="fa fa-cogs"></i>
 						
 						<div>
@@ -232,7 +249,7 @@
 					</div>
 
 
-					<div class="feature-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1100">					
+					<div class="feature-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">					
 						<i class="fa fa-minus-square"></i>					
 						
 						<div>
@@ -286,14 +303,14 @@
 			
 			<h1>Get In Touch</h1>
 			<div class="content">
-				<div class="contact-form" data-aos="fade-right" data-aos-duration="1000">
+				<div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
 				
 					<form>
 						<input type="text" name="name" placeholder="Full Name" required>
 						<input type="number" name="phone-number" placeholder="Phone Number" required><br>
 						<input type="email" name="email" placeholder="Email" required>
 						<input type="subject" name="subject" placeholder="Subject" required><br>
-						<textarea name="message" placeholder="Type your message here" required></textarea>
+						<textarea id="textarea" name="message" placeholder="Type your message here" required></textarea><br>
 						<button type="submit" name="submit">Submit</button>
 					</form>
 					
@@ -301,7 +318,7 @@
 
 
 
-				<div class="contact-info" data-aos="fade-left" data-aos-duration="1000">
+				<div class="contact-info" data-aos="fade-up" data-aos-duration="1000">
 					
 					<h2>CONTACT INFO</h2>
 					<h6>Our Team is always ready to solve your issues. <br> We are just a call away</h6>
@@ -337,7 +354,6 @@
 				<a href=""><i class="fa fa-instagram" ></i></a>
 				<a href=""><i class="fa fa-linkedin" ></i></a>
 				<a href=""><i class="fa fa-github" ></i></a>
-
 			</div>
 			<h4> 2021  FIDIFZI NATION. &copy ALL RIGHTS RESERVED</h4>
 		</footer>
@@ -351,6 +367,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
   </script>
 
 </html>

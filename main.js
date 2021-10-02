@@ -30,9 +30,6 @@ development.addEventListener("click", () => {
 
 })
 
-// document.getElementByClass('.menu h3').addEventListener('click', () =>{
-//   this.classList.add('active');
-// })
 
 $(document).on('click','.menu h3', function(){
   $(this).addClass('active').siblings().removeClass('active');
@@ -41,18 +38,24 @@ $(document).on('click','.menu h3', function(){
 
 // ***************************Nav bar show/hide code************
 
-var prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > (currentScrollPos)) {
-    document.getElementById("nav-scroll").style.top = "0";
-  } else {
-    document.getElementById("nav-scroll").style.top = "-9rem";
-    document.getElementById("nav-scroll").style.background = "#fff";
-    document.getElementById("nav-scroll").style.borderBottom = "4px solid #4b1465"
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  
+  if (currentScrollPos > 10) {
+    document.getElementById("nav-scroll").classList.add("nav-scrolled");
+  }
+  else {
+    document.getElementById("nav-scroll").classList.remove("nav-scrolled");
 
   }
-  prevScrollpos = currentScrollPos;
 }
 
+
+$(document).on('change', '#checkbox', function() {
+    if(this.checked) {
+      $('.menu-items').css("right", "50%");
+    }else{
+      $('.menu-items').css("right", "-200rem");
+
+    }
+});
