@@ -10,10 +10,12 @@
 		flex-direction: column;
 		position: absolute;
 		width: 50%;
-		height: 60rem;
+		height: 100vh;
 		padding: 2rem;
-		padding-top: 5rem;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
 		right: -200rem;
+		top: 0;
 		background-color: #fff;
 		z-index: 200;
 		transform-origin: 0% 0%;
