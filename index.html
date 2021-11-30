@@ -12,8 +12,18 @@
 
 
 	<title>FIDIFZI NATION</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213888058-1">
+	</script>
 	<script>
- 		let scrollRef = 0;
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-213888058-1');
+	</script>
+	<script>
+		let scrollRef = 0;
 
 		window.addEventListener('scroll', function() {
 		  // increase value up to 10, then refresh AOS
